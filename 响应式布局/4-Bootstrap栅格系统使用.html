@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        [class^="col"] {
+            border: 1px solid #ccc;
+        }
+        
+        .container .row:nth-child(1) {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6">1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6">1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6">1</div>
+        </div>
+        <!-- 如果孩子的分数相加为12，则可以占满整个container -->
+        <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">1</div>
+            <div class="col-lg-2">1</div>
+            <div class="col-lg-2">1</div>
+        </div>
+        <!-- 如果孩子的分数相加小于12，则不会占满整个container -->
+        <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">1</div>
+            <div class="col-lg-2">1</div>
+            <div class="col-lg-1">1</div>
+        </div>
+        <!-- 如果孩子的分数相加大于12，则会占满整个container，多余的那一列会另起一行表示 -->
+        <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">1</div>
+            <div class="col-lg-2">1</div>
+            <div class="col-lg-3">1</div>
+        </div>
+    </div>
+</body>
+
+</html>

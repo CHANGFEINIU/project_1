@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .row>div {
+            height: 400px;
+            background-color: purple;
+            color: #fff;
+        }
+        
+        .row>div:nth-child(3) {
+            background-color: pink;
+        }
+        
+        span {
+            color: #fff;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<!-- 类名
+    隐藏
+hidden-lg
+hidden-md
+hidden-sm
+hidden-xs
+    显示
+visible-lg
+visible-md
+visible-sm
+visible-xs
+ -->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 ">
+                <!-- 只会在大屏幕下显示 -->
+                <span class="visible-lg">我是你爸爸</span>
+            </div>
+            <div class="col-xs-3">2</div>
+            <div class="col-xs-3 hidden-sm hidden-xs">我会变魔术哦</div>
+            <div class="col-xs-3">4</div>
+        </div>
+    </div>
+</body>
+
+</html>

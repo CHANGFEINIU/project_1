@@ -1,0 +1,17 @@
+.header{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    a{
+        color: red;
+        // 添加伪类,交集,伪元素选择器的方式前面加&
+        &:hover{
+            color: blue;
+        }
+    }
+}
+.nav{
+    .logo{
+        color: green;
+    }
+}
